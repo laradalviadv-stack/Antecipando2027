@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <title>Antecipando 2027</title>
+  <meta name="description" content="Desafio de 75 dias: 15 de outubro a 28 de dezembro de 2026." />
+  <meta name="theme-color" content="#F7F2E8" />
+  <meta name="color-scheme" content="light only" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Antecipando" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="icons/icon-180.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Gloock&family=Mrs+Saint+Delafield&display=swap" />
+  <link rel="stylesheet" href="css/app.css" />
+</head>
+<body>
+  <!-- Símbolos e filtros compartilhados -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <!-- asterisco de 8 pontas, traço fino -->
+      <symbol id="ast" viewBox="0 0 24 24">
+        <path d="M12 3.2v17.6M3.2 12h17.6M5.8 5.8l12.4 12.4M18.2 5.8L5.8 18.2" fill="none" stroke="currentColor" stroke-width="1.35" stroke-linecap="round" />
+      </symbol>
+      <!-- moldura felpuda (aplicada só à camada de fundo) -->
+      <filter id="felpa" x="-10%" y="-10%" width="120%" height="120%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.045" numOctaves="2" seed="7" result="n" />
+        <feDisplacementMap in="SourceGraphic" in2="n" scale="12" xChannelSelector="R" yChannelSelector="G" />
+      </filter>
+      <filter id="felpa2" x="-10%" y="-10%" width="120%" height="120%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.08" numOctaves="2" seed="3" result="n" />
+        <feDisplacementMap in="SourceGraphic" in2="n" scale="16" xChannelSelector="R" yChannelSelector="G" />
+      </filter>
+    </defs>
+  </svg>
+
+  <main id="view" class="view"></main>
+  <nav id="tabbar" class="tabbar" aria-label="Navegação"></nav>
+
+  <script src="js/frases.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/tarefas.js"></script>
+  <script src="js/hoje.js"></script>
+  <script src="js/conclusao.js"></script>
+  <script src="js/progresso.js"></script>
+  <script src="js/registro.js"></script>
+  <script src="js/metricas.js"></script>
+  <script src="js/ajustes.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

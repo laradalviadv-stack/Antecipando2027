@@ -1,0 +1,18 @@
+{
+  "name": "Antecipando 2027",
+  "short_name": "Antecipando",
+  "description": "Desafio de 75 dias: 15 de outubro a 28 de dezembro de 2026.",
+  "lang": "pt-BR",
+  "start_url": "./index.html#hoje",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#F7F2E8",
+  "theme_color": "#F7F2E8",
+  "icons": [
+    { "src": "icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "icons/icon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}
